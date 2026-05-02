@@ -1,0 +1,28 @@
+# Publishes to pub.dev using trusted publishing (OIDC)—no long-lived pub tokens.
+#
+# Setup (once): https://dart.dev/tools/pub/automated-publishing
+# In pub.dev → Admin → Automated publishing → connect this GitHub repo and set a
+# tag pattern such as `v{{version}}` (must match `on.push.tags` below).
+#
+# Release flow: merge your PR to `main`, then create and push a matching tag for
+# the version in pubspec.yaml, for example:
+#   git tag v1.0.1 && git push origin v1.0.1
+# (Plain pushes to `main` cannot satisfy pub.dev’s OIDC tag requirement.)
+
+name: Publish to pub.dev
+
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+
+jobs:
+  publish:
+    permissions:
+      id-token: write
+      contents: read
+
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1.7.2
+    # If pub.dev requires a GitHub Environment for publishing, uncomment:
+    # with:
+    #   environment: pub.dev
