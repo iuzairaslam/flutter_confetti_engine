@@ -23,13 +23,15 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
+          # Pin so `dart format` matches local/dev installs (avoids stable drift).
+          flutter-version: '3.41.0'
           cache: true
-
-      - name: Format (dart format)
-        run: dart format --output=none --set-exit-if-changed lib test
 
       - name: flutter pub get
         run: flutter pub get
+
+      - name: Format (dart format)
+        run: dart format --output=none --set-exit-if-changed lib test
 
       - name: flutter analyze
         run: flutter analyze
@@ -49,15 +51,16 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
+          flutter-version: '3.41.0'
           cache: true
-
-      - name: Format example
-        working-directory: example
-        run: dart format --output=none --set-exit-if-changed lib test
 
       - name: flutter pub get
         working-directory: example
         run: flutter pub get
+
+      - name: Format example
+        working-directory: example
+        run: dart format --output=none --set-exit-if-changed lib test
 
       - name: flutter analyze
         working-directory: example
