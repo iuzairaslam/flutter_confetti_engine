@@ -49,7 +49,7 @@
 /// ConfettiWidget(preset: Preset.flare, controller: controller, autoPlay: false)
 /// controller.play();
 /// ```
-library flutter_confetti_engine;
+library;
 
 export 'src/builtin_sound.dart' show BuiltinSound;
 export 'src/bundled_sounds.dart' show ConfettiBundledSounds;

@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.6 — 2026-05-03
+
+### Changed
+
+- Dev dependency **`flutter_lints`** raised to **^6.0.0** (latest compatible with current SDK).
+
 ## 1.0.5 — 2026-05-03
 
 ### Changed
