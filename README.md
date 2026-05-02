@@ -16,8 +16,105 @@ A Flutter celebration package that unifies **confetti particle animation**, **ha
 
 ---
 
+## Demo
+
+Screen recordings from the bundled **[example](example/)** app (`flutter run` in `example/`). Factory **presets**, **showcase** modes, and **dialogs / messages** — **three clips per row**.
+
+> **pub.dev:** Animated GIFs are stored in the Git repository only (not in the published package tarball). If images do not appear below, view this README on **[GitHub](https://github.com/iuzairaslam/flutter_confetti_engine)**.
+
+<table>
+<tr>
+<td align="center" width="33%">
+<img src="docs/demo_gifs/nova.gif" alt="Nova preset" width="220"/><br/>
+<strong>Nova</strong><br/>
+<sub><code>Preset.nova</code></sub>
+</td>
+<td align="center" width="33%">
+<img src="docs/demo_gifs/cascade.gif" alt="Cascade preset" width="220"/><br/>
+<strong>Cascade</strong><br/>
+<sub><code>Preset.cascade</code></sub>
+</td>
+<td align="center" width="33%">
+<img src="docs/demo_gifs/flare.gif" alt="Flare preset" width="220"/><br/>
+<strong>Flare</strong><br/>
+<sub><code>Preset.flare</code></sub>
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="docs/demo_gifs/crossfire.gif" alt="Crossfire preset" width="220"/><br/>
+<strong>Crossfire</strong><br/>
+<sub><code>Preset.crossfire</code></sub>
+</td>
+<td align="center">
+<img src="docs/demo_gifs/achievement_score.gif" alt="Achievement scene" width="220"/><br/>
+<strong>Achievement scene</strong><br/>
+<sub><code>CelebrationScene</code> · banner</sub>
+</td>
+<td align="center">
+<img src="docs/demo_gifs/center_pop.gif" alt="Center Pop showcase" width="220"/><br/>
+<strong>Center Pop</strong><br/>
+<sub><code>ConfettiShowcase.centerPop</code></sub>
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="docs/demo_gifs/random_angle.gif" alt="Random Angle showcase" width="220"/><br/>
+<strong>Random Angle</strong><br/>
+<sub><code>ConfettiShowcase.randomAngle</code></sub>
+</td>
+<td align="center">
+<img src="docs/demo_gifs/dual_launch.gif" alt="Dual Launch showcase" width="220"/><br/>
+<strong>Dual Launch</strong><br/>
+<sub><code>ConfettiShowcase.dualLaunch</code></sub>
+</td>
+<td align="center">
+<img src="docs/demo_gifs/star_field.gif" alt="Star Field showcase" width="220"/><br/>
+<strong>Star Field</strong><br/>
+<sub><code>ConfettiShowcase.starField</code></sub>
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="docs/demo_gifs/emoji_pop.gif" alt="Emoji Pop showcase" width="220"/><br/>
+<strong>Emoji Pop</strong><br/>
+<sub><code>ConfettiShowcase.emojiPop</code></sub>
+</td>
+<td align="center">
+<img src="docs/demo_gifs/dual_stream.gif" alt="Dual Stream showcase" width="220"/><br/>
+<strong>Dual Stream</strong><br/>
+<sub><code>ConfettiShowcase.dualStream</code></sub>
+</td>
+<td align="center">
+<img src="docs/demo_gifs/controlled_burst.gif" alt="Controlled Burst showcase" width="220"/><br/>
+<strong>Controlled Burst</strong><br/>
+<sub><code>ConfettiShowcase.controlledBurst</code></sub>
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="docs/demo_gifs/inline_emitter.gif" alt="Inline Emitter showcase" width="220"/><br/>
+<strong>Inline Emitter</strong><br/>
+<sub><code>ConfettiShowcase.inlineEmitter</code></sub>
+</td>
+<td align="center">
+<img src="docs/demo_gifs/modal_dialog.gif" alt="Modal dialog celebration" width="220"/><br/>
+<strong>Modal dialog</strong><br/>
+<sub><code>celebrateInDialog</code></sub>
+</td>
+<td align="center">
+<img src="docs/demo_gifs/celebrate_with_message.gif" alt="Celebrate with message" width="220"/><br/>
+<strong>Celebrate with message</strong><br/>
+<sub><code>celebrateWithMessage</code></sub>
+</td>
+</tr>
+</table>
+
+---
+
 ## Table of Contents
 
+- [Demo](#demo)
 - [Installation](#installation)
 - [Quick Start](#quick-start)
 - [Presets](#presets)

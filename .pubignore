@@ -8,3 +8,6 @@ build/
 
 # Xcode / CocoaPods local caches (must never ship on pub.dev)
 **/DerivedData/
+
+# Screen-recording GIFs for GitHub README only (~32 MB); not shipped to pub.dev
+docs/demo_gifs/
