@@ -1,0 +1,13 @@
+# Dart / Flutter
+.dart_tool/
+.packages
+.pub/
+build/
+coverage/
+
+# IDE
+.idea/
+*.iml
+
+# OS
+.DS_Store

@@ -1,0 +1,7 @@
+# Agent / contributor docs — not part of the consumer-facing package on pub.dev
+CLAUDE.md
+.claude/
+
+# Local tooling outputs (always exclude from the published tarball)
+build/
+.dart_tool/

@@ -1,0 +1,25 @@
+name: flutter_confetti_engine_example
+description: Interactive demo for flutter_confetti_engine.
+publish_to: none
+version: 1.0.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_confetti_engine:
+    path: ../
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    # Demo celebration clip (app-owned asset).
+    - assets/children_yay.mp3
