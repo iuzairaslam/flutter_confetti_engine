@@ -1,11 +1,10 @@
 /// The visual shape rendered for each confetti particle.
 ///
-/// Used by [PresetFactory] to configure particles and by [ConfettiPainter]
-/// to decide which canvas primitive to draw.
+/// Presets pick a shape mix; the painter maps each value to a canvas primitive.
 ///
 /// All shapes are drawn centered on (0, 0) in the particle's local coordinate
 /// space — the canvas is translated to the particle's world position before
-/// [ConfettiPainter] draws anything.
+/// drawing.
 enum ParticleShape {
   /// Five-pointed star drawn with alternating outer/inner radius vertices.
   star,
@@ -17,7 +16,7 @@ enum ParticleShape {
   ribbon,
 
   /// A single unicode emoji character (e.g. 🎉).
-  /// The emoji string is stored on the [Particle] via its [Particle.emoji] field.
+  /// The emoji string is stored on the simulation particle when this shape is used.
   emoji,
 
   /// Filled circle / disc. The fastest shape to render.

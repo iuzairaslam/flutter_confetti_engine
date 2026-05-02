@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 
 /// The state of a [ConfettiController].
 enum ControllerState {
-  /// No animation has been started yet (initial state after construction or [reset]).
+  /// No animation has been started yet (initial state after construction or [ConfettiController.reset]).
   idle,
 
   /// The animation is currently running.
@@ -47,7 +47,7 @@ class ConfettiController extends ChangeNotifier {
 
   /// Starts or restarts the confetti animation.
   ///
-  /// If the animation is already playing this is a no-op; call [reset] first
+  /// If the animation is already playing this is a no-op; call [ConfettiController.reset] first
   /// if you want to replay from the beginning.
   void play() {
     if (_state == ControllerState.playing) return;
@@ -57,7 +57,7 @@ class ConfettiController extends ChangeNotifier {
 
   /// Halts the animation mid-flight. Particles freeze in place.
   ///
-  /// Call [reset] to also clear the frozen particles from the canvas.
+  /// Call [ConfettiController.reset] to also clear the frozen particles from the canvas.
   void stop() {
     if (_state == ControllerState.stopped) return;
     _state = ControllerState.stopped;

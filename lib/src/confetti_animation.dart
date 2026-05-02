@@ -4,7 +4,8 @@ import 'presets.dart';
 /// Animation motion profiles for mapped presets.
 ///
 /// Map to [Preset] via [ConfettiAnimationMaps.presetFor]. Use
-/// [ConfettiAnimationMaps.extraCustomizationFor] for subtle tweaks (e.g. [drift] drift).
+/// [ConfettiAnimationMaps.extraCustomizationFor] for subtle tweaks (e.g.
+/// [AnimationConfetti.drift] motion).
 enum AnimationConfetti {
   /// Directional stream ([Preset.crossfire]-style).
   streamSide,
@@ -44,7 +45,7 @@ abstract final class ConfettiAnimationMaps {
     }
   }
 
-  /// Extra customization layered on top of the preset (e.g. [drift] drift).
+  /// Extra customization layered on top of the preset (e.g. [AnimationConfetti.drift]).
   static ConfettiCustomization? extraCustomizationFor(AnimationConfetti animation) {
     switch (animation) {
       case AnimationConfetti.drift:

@@ -11,7 +11,7 @@ enum ConfettiDensity {
 abstract final class ConfettiDensityScale {
   ConfettiDensityScale._();
 
-  /// Multiplier applied to a preset’s default [particleCount] before rounding.
+  /// Multiplier applied to each preset’s built-in default particle total before rounding.
   static double multiplier(ConfettiDensity density) {
     switch (density) {
       case ConfettiDensity.low:

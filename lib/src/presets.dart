@@ -11,7 +11,7 @@ import 'tick_confetti_physics.dart';
 import 'tick_confetti_spawn_options.dart';
 
 /// Default unicode strings used for [ParticleShape.emoji] particles when
-/// [PresetFactory.createParticles] is called without a custom [emojiPool].
+/// particles are created without a custom emoji list (see [ConfettiWidget.emojiPool]).
 ///
 /// Override per celebration via [ConfettiWidget.emojiPool] or
 /// [ConfettiEngine.celebrate]’s `emojiPool` argument.

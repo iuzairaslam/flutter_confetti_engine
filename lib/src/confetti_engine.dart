@@ -63,8 +63,8 @@ abstract final class ConfettiEngine {
   /// - [scene] — optional [CelebrationScene] (preset + base customization), e.g.
   ///   [CelebrationScene.fromConfettiType], [CelebrationScene.compose], or
   ///   [CelebrationScene.themed]. When non-null,
-  ///   [scene.preset] overrides [preset], and [scene.customization] is merged
-  ///   under [customization] (call-site wins per field).
+  ///   [CelebrationScene.preset] overrides [preset], and [CelebrationScene.customization]
+  ///   is merged under [customization] (call-site wins per field).
   /// - [customization] — optional count / colors / shapes / physics; see
   ///   [ConfettiCustomization].
   /// - [overlayMessage] — optional banner ([CelebrationMessageOptions]): text,

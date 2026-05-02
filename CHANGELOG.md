@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.3 — 2026-05-02
+
+### Fixed
+
+- **Pub.dev score / metadata:** Removed explicit `documentation:` URL from `pubspec.yaml` so package analysis does not fail the “Documentation URL” check before hosted API docs are generated (pub.dev still links to generated docs automatically).
+- **Dartdoc:** Resolved broken `[reference]` links in library comments (public API docs).
+
 ## 1.0.0 — 2026-05-02
 
 ### Changed

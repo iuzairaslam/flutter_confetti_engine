@@ -29,7 +29,7 @@ enum ConfettiShowcase {
   /// Warm palette, `spread: 360`, `gravity: 0`, `ticks: 50`, star shapes + mixed scalar.
   starField,
 
-  /// Same motion as [starField] with [ParticleShape.emoji] from [emojiPool].
+  /// Same motion as [starField] with [ParticleShape.emoji]; supply strings via [ConfettiWidget.emojiPool].
   emojiPop,
 
   /// Red / white dual cannons from left and right edges (`angle` 60° / 120°).

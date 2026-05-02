@@ -11,7 +11,8 @@ import 'presets.dart';
 /// Bundles a [Preset] with optional defaults — semantic types ([ConfettiType]),
 /// color themes ([ConfettiColorTheme]), or your own [ConfettiCustomization].
 ///
-/// Pass to [ConfettiEngine.celebrate] / [ConfettiWidget] as [scene]; explicit
+/// Pass to [ConfettiEngine.celebrate] / [ConfettiWidget] as the `scene`
+/// argument; explicit
 /// `preset` and `customization` arguments are merged (your customization wins
 /// on a per-field basis when provided).
 @immutable

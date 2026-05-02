@@ -2,7 +2,7 @@ name: flutter_confetti_engine
 description: >
   A celebration package that unifies confetti particles, haptic feedback, and
   optional sound in a single API call.
-version: 1.0.2
+version: 1.0.3
 
 # Repository is the canonical homepage until the package is listed on pub.dev.
 homepage: https://github.com/iuzairaslam/flutter_confetti_engine
@@ -10,8 +10,9 @@ homepage: https://github.com/iuzairaslam/flutter_confetti_engine
 repository: https://github.com/iuzairaslam/flutter_confetti_engine
 issue_tracker: https://github.com/iuzairaslam/flutter_confetti_engine/issues
 
-# Populated by pub.dev after the first successful publish.
-documentation: https://pub.dev/documentation/flutter_confetti_engine/latest/
+# API docs: omit `documentation:` here — pub.dev hosts generated docs at
+# https://pub.dev/documentation/flutter_confetti_engine/latest/ automatically.
+# Setting it explicitly can fail package score checks until that URL exists.
 
 topics:
   - animation
