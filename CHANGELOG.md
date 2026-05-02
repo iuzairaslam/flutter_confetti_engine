@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.5 — 2026-05-03
+
+### Changed
+
+- Patch release to trigger **pub.dev** publish via GitHub Actions tag workflow (`v1.0.5` / aligned `publish.yml`).
+
 ## 1.0.4 — 2026-05-03
 
 ### Fixed
