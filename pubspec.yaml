@@ -4,14 +4,13 @@ description: >
   optional sound in a single API call.
 version: 1.0.0
 
-# Primary landing for package consumers (live after first pub.dev publish).
-homepage: https://pub.dev/packages/flutter_confetti_engine
+# Repository is the canonical homepage until the package is listed on pub.dev.
+homepage: https://github.com/iuzairaslam/flutter_confetti_engine
 
-# Replace `your-org` with your GitHub org or username before tagging releases.
-repository: https://github.com/your-org/flutter_confetti_engine
-issue_tracker: https://github.com/your-org/flutter_confetti_engine/issues
+repository: https://github.com/iuzairaslam/flutter_confetti_engine
+issue_tracker: https://github.com/iuzairaslam/flutter_confetti_engine/issues
 
-# API reference (populated by pub.dev after publish).
+# Populated by pub.dev after the first successful publish.
 documentation: https://pub.dev/documentation/flutter_confetti_engine/latest/
 
 topics:

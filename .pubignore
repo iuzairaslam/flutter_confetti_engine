@@ -5,3 +5,6 @@ CLAUDE.md
 # Local tooling outputs (always exclude from the published tarball)
 build/
 .dart_tool/
+
+# Xcode / CocoaPods local caches (must never ship on pub.dev)
+**/DerivedData/
