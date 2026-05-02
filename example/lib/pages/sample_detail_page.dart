@@ -66,7 +66,8 @@ class SampleDetailPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                   decoration: BoxDecoration(
                     color: kAccentViolet.withValues(alpha: 0.15),
                     borderRadius: BorderRadius.circular(8),
@@ -191,7 +192,8 @@ class _CodeBlockState extends State<_CodeBlock> {
                 _trafficDot(const Color(0xFF28C940)),
                 const SizedBox(width: 10),
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                   decoration: BoxDecoration(
                     color: kAccentViolet.withValues(alpha: 0.18),
                     borderRadius: BorderRadius.circular(5),
@@ -214,11 +216,15 @@ class _CodeBlockState extends State<_CodeBlock> {
                           key: ValueKey('done'),
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            Icon(Icons.check_rounded, size: 13, color: kAccentTeal),
+                            Icon(Icons.check_rounded,
+                                size: 13, color: kAccentTeal),
                             SizedBox(width: 4),
                             Text(
                               'Copied',
-                              style: TextStyle(color: kAccentTeal, fontSize: 12, fontWeight: FontWeight.w500),
+                              style: TextStyle(
+                                  color: kAccentTeal,
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w500),
                             ),
                           ],
                         )
@@ -228,11 +234,13 @@ class _CodeBlockState extends State<_CodeBlock> {
                           child: const Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              Icon(Icons.copy_rounded, size: 13, color: kTextMuted),
+                              Icon(Icons.copy_rounded,
+                                  size: 13, color: kTextMuted),
                               SizedBox(width: 4),
                               Text(
                                 'Copy',
-                                style: TextStyle(color: kTextMuted, fontSize: 12),
+                                style:
+                                    TextStyle(color: kTextMuted, fontSize: 12),
                               ),
                             ],
                           ),

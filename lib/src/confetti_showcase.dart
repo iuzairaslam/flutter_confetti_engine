@@ -133,9 +133,9 @@ abstract final class ShowcaseParticleFactory {
           count: countEach,
           opts: baseOpts,
           emitter: (s) => Offset(
-                s.width * rng.nextDouble().clamp(0.1, 0.3),
-                s.height * (rng.nextDouble() - 0.2).clamp(0.15, 0.85),
-              ),
+            s.width * rng.nextDouble().clamp(0.1, 0.3),
+            s.height * (rng.nextDouble() - 0.2).clamp(0.15, 0.85),
+          ),
           shapes: const [ParticleShape.circle, ParticleShape.star],
           colors: _palette(customization),
         );
@@ -146,9 +146,9 @@ abstract final class ShowcaseParticleFactory {
           count: countEach,
           opts: baseOpts,
           emitter: (s) => Offset(
-                s.width * rng.nextDouble().clamp(0.7, 0.9),
-                s.height * (rng.nextDouble() - 0.2).clamp(0.15, 0.85),
-              ),
+            s.width * rng.nextDouble().clamp(0.7, 0.9),
+            s.height * (rng.nextDouble() - 0.2).clamp(0.15, 0.85),
+          ),
           shapes: const [ParticleShape.circle, ParticleShape.star],
           colors: _palette(customization),
         );
@@ -335,9 +335,8 @@ abstract final class ShowcaseParticleFactory {
       final origin = emitter(safe);
       final color = colors[rng.nextInt(colors.length)];
       final shape = shapes[rng.nextInt(shapes.length)];
-      final scalar = scalarJitter
-          ? (rng.nextBool() ? 1.2 : 0.75)
-          : spawnOpts.scalar;
+      final scalar =
+          scalarJitter ? (rng.nextBool() ? 1.2 : 0.75) : spawnOpts.scalar;
       final perOpts =
           scalarJitter ? spawnOpts.copyWith(scalar: scalar) : spawnOpts;
 

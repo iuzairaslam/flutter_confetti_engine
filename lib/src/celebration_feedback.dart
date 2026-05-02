@@ -100,8 +100,7 @@ class CelebrationFeedback {
   ///
   /// Returns [soundAssetPath] if set, otherwise [builtinSound]'s path,
   /// otherwise `null` (silent).
-  String? get resolvedSoundPath =>
-      soundAssetPath ?? builtinSound?.assetPath;
+  String? get resolvedSoundPath => soundAssetPath ?? builtinSound?.assetPath;
 
   /// Returns a copy with the given fields replaced.
   CelebrationFeedback copyWith({

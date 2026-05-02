@@ -372,8 +372,7 @@ class _ConfettiWidgetState extends State<ConfettiWidget>
         return CustomPaint(
           painter: ConfettiPainter(
             particles: _particles,
-            particleBlendMode:
-                ConfettiCustomization.effectiveParticleBlendMode(
+            particleBlendMode: ConfettiCustomization.effectiveParticleBlendMode(
               widget.customization,
             ),
           ),

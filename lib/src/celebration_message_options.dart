@@ -15,7 +15,8 @@ class CelebrationMessageOptions {
     this.textAlign = TextAlign.center,
     this.style,
     this.decoration,
-    this.innerPadding = const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+    this.innerPadding =
+        const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
     this.durationInSeconds,
   });
 
@@ -80,6 +81,5 @@ class CelebrationMessageOptions {
   String get effectiveMessage => message.trim();
 
   /// Whether the engine should paint a text layer.
-  bool get shouldPaintText =>
-      showMessage && effectiveMessage.isNotEmpty;
+  bool get shouldPaintText => showMessage && effectiveMessage.isNotEmpty;
 }

@@ -27,13 +27,14 @@ class DemoHome extends StatelessWidget {
         backgroundColor: Colors.transparent,
         title: const Text(
           'flutter_confetti_engine',
-          style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600, color: Colors.white70),
+          style: TextStyle(
+              fontSize: 15, fontWeight: FontWeight.w600, color: Colors.white70),
         ),
-        actions: [
+        actions: const [
           IconButton(
             tooltip: 'Dismiss overlay',
             onPressed: ConfettiEngine.dismiss,
-            icon: const Icon(Icons.layers_clear_rounded, color: Colors.white54),
+            icon: Icon(Icons.layers_clear_rounded, color: Colors.white54),
           ),
         ],
       ),
@@ -52,7 +53,7 @@ class DemoHome extends StatelessWidget {
           const SizedBox(height: 28),
 
           // ── Built-in sounds ───────────────────────────────────────────────
-          _SectionHeader(label: '🔊', title: 'Built-in Sounds'),
+          const _SectionHeader(label: '🔊', title: 'Built-in Sounds'),
           const SizedBox(height: 12),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -160,7 +161,7 @@ class DemoHome extends StatelessWidget {
           const SizedBox(height: 28),
 
           // ── Presets ───────────────────────────────────────────────────────
-          _SectionHeader(label: '🎆', title: 'Presets'),
+          const _SectionHeader(label: '🎆', title: 'Presets'),
           const SizedBox(height: 10),
           ...Preset.values.map(
             (p) => Padding(
@@ -174,7 +175,7 @@ class DemoHome extends StatelessWidget {
           const SizedBox(height: 18),
 
           // ── Showcases ─────────────────────────────────────────────────────
-          _SectionHeader(label: '🎪', title: 'Showcases'),
+          const _SectionHeader(label: '🎪', title: 'Showcases'),
           const SizedBox(height: 10),
           ...ConfettiShowcase.values.map(
             (s) => Padding(
@@ -188,7 +189,7 @@ class DemoHome extends StatelessWidget {
           const SizedBox(height: 18),
 
           // ── Explore more ──────────────────────────────────────────────────
-          _SectionHeader(label: '✦', title: 'Explore More'),
+          const _SectionHeader(label: '✦', title: 'Explore More'),
           const SizedBox(height: 10),
           Padding(
             padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
@@ -504,12 +505,13 @@ class _HeroHeader extends StatelessWidget {
         ),
       ),
       padding: const EdgeInsets.fromLTRB(24, 4, 24, 28),
-      child: Column(
+      child: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text('🎉  🎊  ✨  💫', style: TextStyle(fontSize: 22, letterSpacing: 8)),
-          const SizedBox(height: 18),
-          const Text(
+          Text('🎉  🎊  ✨  💫',
+              style: TextStyle(fontSize: 22, letterSpacing: 8)),
+          SizedBox(height: 18),
+          Text(
             'Confetti Engine',
             style: TextStyle(
               color: Colors.white,
@@ -519,8 +521,8 @@ class _HeroHeader extends StatelessWidget {
               height: 1.1,
             ),
           ),
-          const SizedBox(height: 8),
-          const Text(
+          SizedBox(height: 8),
+          Text(
             'Particles · Haptics · Sound\nOne API call.',
             style: TextStyle(
               color: Color(0xFF9090C0),
@@ -528,11 +530,11 @@ class _HeroHeader extends StatelessWidget {
               height: 1.5,
             ),
           ),
-          const SizedBox(height: 20),
+          SizedBox(height: 20),
           Wrap(
             spacing: 8,
             runSpacing: 8,
-            children: const [
+            children: [
               _StatChip(label: '4 presets', icon: Icons.auto_awesome_rounded),
               _StatChip(label: '10 sounds', icon: Icons.music_note_rounded),
               _StatChip(label: 'Haptics', icon: Icons.vibration_rounded),
@@ -604,7 +606,8 @@ class _PhysicsToggle extends StatelessWidget {
               color: kAccentViolet.withValues(alpha: 0.12),
               borderRadius: BorderRadius.circular(10),
             ),
-            child: const Icon(Icons.speed_rounded, color: kAccentViolet, size: 18),
+            child:
+                const Icon(Icons.speed_rounded, color: kAccentViolet, size: 18),
           ),
           const SizedBox(width: 12),
           Expanded(
@@ -678,7 +681,6 @@ class _SectionHeader extends StatelessWidget {
 class _SoundCard extends StatelessWidget {
   const _SoundCard({
     // ignore: unused_element
-    super.key,
     required this.sound,
     required this.emoji,
     required this.label,
@@ -749,7 +751,8 @@ class _SoundCard extends StatelessWidget {
               ),
               const SizedBox(height: 12),
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
                 decoration: BoxDecoration(
                   color: color.withValues(alpha: 0.15),
                   borderRadius: BorderRadius.circular(10),
@@ -875,7 +878,8 @@ class _PresetCard extends StatelessWidget {
                 // Emoji
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 16),
-                  child: Text(visual.emoji, style: const TextStyle(fontSize: 30)),
+                  child:
+                      Text(visual.emoji, style: const TextStyle(fontSize: 30)),
                 ),
                 const SizedBox(width: 12),
                 // Content
@@ -896,7 +900,8 @@ class _PresetCard extends StatelessWidget {
                         const SizedBox(height: 3),
                         Text(
                           meta.subtitle,
-                          style: const TextStyle(color: kTextMuted, fontSize: 12),
+                          style:
+                              const TextStyle(color: kTextMuted, fontSize: 12),
                         ),
                         const SizedBox(height: 9),
                         Row(

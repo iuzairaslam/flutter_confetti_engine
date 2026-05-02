@@ -8,8 +8,7 @@ void main() {
 
   group('PresetFactory', () {
     test('nova produces 120 particles', () {
-      final particles =
-          PresetFactory.createParticles(Preset.nova, testSize);
+      final particles = PresetFactory.createParticles(Preset.nova, testSize);
       expect(particles.length, equals(120));
     });
 
@@ -19,8 +18,7 @@ void main() {
     });
 
     test('flare produces 72 particles', () {
-      final particles =
-          PresetFactory.createParticles(Preset.flare, testSize);
+      final particles = PresetFactory.createParticles(Preset.flare, testSize);
       expect(particles.length, equals(72));
     });
 
@@ -53,8 +51,7 @@ void main() {
     });
 
     test('nova particles originate near screen center', () {
-      final particles =
-          PresetFactory.createParticles(Preset.nova, testSize);
+      final particles = PresetFactory.createParticles(Preset.nova, testSize);
       final cx = testSize.width / 2;
       final cy = testSize.height / 2;
       for (final p in particles) {
@@ -64,8 +61,7 @@ void main() {
     });
 
     test('cascade uses strong downward gravity', () {
-      final particles =
-          PresetFactory.createParticles(Preset.cascade, testSize);
+      final particles = PresetFactory.createParticles(Preset.cascade, testSize);
       for (final p in particles) {
         expect(p.gravity, greaterThan(400.0));
       }
@@ -121,7 +117,8 @@ void main() {
       expect(
         particles.every(
           (p) =>
-              p.shape == ParticleShape.circle || p.shape == ParticleShape.square,
+              p.shape == ParticleShape.circle ||
+              p.shape == ParticleShape.square,
         ),
         isTrue,
       );
@@ -172,8 +169,7 @@ void main() {
     test('emoji particles have non-null emoji string', () {
       var found = false;
       for (var i = 0; i < 20; i++) {
-        final particles =
-            PresetFactory.createParticles(Preset.nova, testSize);
+        final particles = PresetFactory.createParticles(Preset.nova, testSize);
         for (final p in particles) {
           if (p.shape == ParticleShape.emoji) {
             expect(p.emoji, isNotNull);
@@ -252,7 +248,9 @@ void main() {
       expect(m2?.colors, const [Colors.blue]);
     });
 
-    test('ConfettiCustomization.merge preserves particleBlendMode from override', () {
+    test(
+        'ConfettiCustomization.merge preserves particleBlendMode from override',
+        () {
       const base = ConfettiCustomization(
         particleBlendMode: BlendMode.srcOver,
       );

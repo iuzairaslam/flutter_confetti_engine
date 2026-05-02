@@ -223,8 +223,7 @@ class PresetFactory {
     final shapes = _shapes(defaultShapes, cust);
     final colors = _palette(_novaColors, cust);
 
-    final shapePick =
-        shapes.isNotEmpty ? shapes : [ParticleShape.star];
+    final shapePick = shapes.isNotEmpty ? shapes : [ParticleShape.star];
     return List.generate(count, (_) {
       final visual = shapePick[_random.nextInt(shapePick.length)];
       return _spawnFlutterParticle(
@@ -261,9 +260,9 @@ class PresetFactory {
         cust: cust,
         defaultCount: 200,
         emitter: (s) => Offset(
-              s.width / 2 + (_random.nextDouble() - 0.5) * s.width * 0.08,
-              s.height * 0.06,
-            ),
+          s.width / 2 + (_random.nextDouble() - 0.5) * s.width * 0.08,
+          s.height * 0.06,
+        ),
         defaultShapes: const [
           ParticleShape.circle,
           ParticleShape.square,
@@ -289,8 +288,7 @@ class PresetFactory {
     final cx = size.width / 2;
     final cy = size.height * 0.06;
 
-    final shapePick =
-        shapes.isNotEmpty ? shapes : [ParticleShape.paper];
+    final shapePick = shapes.isNotEmpty ? shapes : [ParticleShape.paper];
     return List.generate(count, (_) {
       final visual = shapePick[_random.nextInt(shapePick.length)];
       return _spawnFlutterParticle(
@@ -330,9 +328,9 @@ class PresetFactory {
         cust: cust,
         defaultCount: 72,
         emitter: (s) => Offset(
-              s.width * 0.06,
-              s.height / 2 + (_random.nextDouble() - 0.5) * s.height * 0.35,
-            ),
+          s.width * 0.06,
+          s.height / 2 + (_random.nextDouble() - 0.5) * s.height * 0.35,
+        ),
         defaultShapes: const [
           ParticleShape.circle,
           ParticleShape.square,
@@ -356,8 +354,7 @@ class PresetFactory {
     final ox = size.width * 0.06;
     final oy = size.height / 2;
 
-    final shapePick =
-        shapes.isNotEmpty ? shapes : [ParticleShape.paper];
+    final shapePick = shapes.isNotEmpty ? shapes : [ParticleShape.paper];
     return List.generate(count, (_) {
       final visual = shapePick[_random.nextInt(shapePick.length)];
       return _spawnFlutterParticle(
@@ -397,9 +394,9 @@ class PresetFactory {
         cust: cust,
         defaultCount: 100,
         emitter: (s) => Offset(
-              s.width * 0.94,
-              s.height / 2 + (_random.nextDouble() - 0.5) * s.height * 0.3,
-            ),
+          s.width * 0.94,
+          s.height / 2 + (_random.nextDouble() - 0.5) * s.height * 0.3,
+        ),
         defaultShapes: const [
           ParticleShape.circle,
           ParticleShape.square,
@@ -424,8 +421,7 @@ class PresetFactory {
     final ox = size.width * 0.94;
     final oy = size.height / 2;
 
-    final shapePick =
-        shapes.isNotEmpty ? shapes : [ParticleShape.paper];
+    final shapePick = shapes.isNotEmpty ? shapes : [ParticleShape.paper];
     return List.generate(count, (_) {
       final visual = shapePick[_random.nextInt(shapePick.length)];
       return _spawnFlutterParticle(
@@ -673,8 +669,8 @@ class PresetFactory {
   }) {
     final sm = ConfettiCustomization.effectiveSpeedMultiplier(customization);
     final lm = ConfettiCustomization.effectiveLifetimeMultiplier(customization);
-    final displayGravity =
-        ConfettiCustomization.effectiveGravity(presetNominalGravityPx, customization);
+    final displayGravity = ConfettiCustomization.effectiveGravity(
+        presetNominalGravityPx, customization);
     final g01 = _physicsGravity01(customization, baseGravity01);
 
     final paper = _randomPaperSize(_random, minPaper, maxPaper);

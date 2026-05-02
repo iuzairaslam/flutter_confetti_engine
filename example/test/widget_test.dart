@@ -34,7 +34,8 @@ void main() {
     });
   });
 
-  testWidgets('demo app builds and shows expected text', (WidgetTester tester) async {
+  testWidgets('demo app builds and shows expected text',
+      (WidgetTester tester) async {
     await tester.pumpWidget(const ConfettiExampleApp());
     expect(find.textContaining('flutter_confetti_engine'), findsWidgets);
   });

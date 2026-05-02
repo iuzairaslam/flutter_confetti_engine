@@ -46,7 +46,8 @@ abstract final class ConfettiAnimationMaps {
   }
 
   /// Extra customization layered on top of the preset (e.g. [AnimationConfetti.drift]).
-  static ConfettiCustomization? extraCustomizationFor(AnimationConfetti animation) {
+  static ConfettiCustomization? extraCustomizationFor(
+      AnimationConfetti animation) {
     switch (animation) {
       case AnimationConfetti.drift:
         return const ConfettiCustomization(speedMultiplier: 1.28);

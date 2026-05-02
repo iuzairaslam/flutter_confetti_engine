@@ -29,10 +29,14 @@ void main() {
     });
 
     test('builtinForPreset returns correct BuiltinSound enum value', () {
-      expect(ConfettiBundledSounds.builtinForPreset(Preset.nova), BuiltinSound.pop);
-      expect(ConfettiBundledSounds.builtinForPreset(Preset.crossfire), BuiltinSound.pop);
-      expect(ConfettiBundledSounds.builtinForPreset(Preset.cascade), BuiltinSound.fanfare);
-      expect(ConfettiBundledSounds.builtinForPreset(Preset.flare), BuiltinSound.chime);
+      expect(ConfettiBundledSounds.builtinForPreset(Preset.nova),
+          BuiltinSound.pop);
+      expect(ConfettiBundledSounds.builtinForPreset(Preset.crossfire),
+          BuiltinSound.pop);
+      expect(ConfettiBundledSounds.builtinForPreset(Preset.cascade),
+          BuiltinSound.fanfare);
+      expect(ConfettiBundledSounds.builtinForPreset(Preset.flare),
+          BuiltinSound.chime);
     });
 
     test('convenience getters match BuiltinSound asset paths', () {

@@ -151,8 +151,7 @@ class Particle {
 
     if (!y.isFinite ||
         !x.isFinite ||
-        (fc == null &&
-            (!vy.isFinite || !vx.isFinite || !rotation.isFinite)) ||
+        (fc == null && (!vy.isFinite || !vx.isFinite || !rotation.isFinite)) ||
         !currentLifetime.isFinite) {
       _isDead = true;
       opacity = 0.0;

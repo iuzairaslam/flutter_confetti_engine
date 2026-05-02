@@ -156,13 +156,16 @@ class ConfettiPainter extends CustomPainter {
     canvas.restore();
   }
 
-  void _drawTickCircle(Canvas canvas, Paint paint, TickConfettiPhysics physics) {
+  void _drawTickCircle(
+      Canvas canvas, Paint paint, TickConfettiPhysics physics) {
     canvas.save();
 
     canvas.translate(physics.x, physics.y);
     canvas.rotate(pi / 10 * physics.wobble);
-    final sx = ((physics.x2 - physics.x1).abs() * physics.ovalScalar).clamp(0.5, 9999.0);
-    final sy = ((physics.y2 - physics.y1).abs() * physics.ovalScalar).clamp(0.5, 9999.0);
+    final sx = ((physics.x2 - physics.x1).abs() * physics.ovalScalar)
+        .clamp(0.5, 9999.0);
+    final sy = ((physics.y2 - physics.y1).abs() * physics.ovalScalar)
+        .clamp(0.5, 9999.0);
     canvas.scale(sx, sy);
 
     canvas.drawArc(
@@ -176,7 +179,8 @@ class ConfettiPainter extends CustomPainter {
     canvas.restore();
   }
 
-  void _drawTickSquare(Canvas canvas, Paint paint, TickConfettiPhysics physics) {
+  void _drawTickSquare(
+      Canvas canvas, Paint paint, TickConfettiPhysics physics) {
     canvas.save();
 
     final path = Path()
@@ -190,7 +194,8 @@ class ConfettiPainter extends CustomPainter {
     canvas.restore();
   }
 
-  void _drawTickTriangle(Canvas canvas, Paint paint, TickConfettiPhysics physics) {
+  void _drawTickTriangle(
+      Canvas canvas, Paint paint, TickConfettiPhysics physics) {
     canvas.save();
 
     final path = Path()

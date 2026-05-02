@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.4 — 2026-05-03
+
+### Fixed
+
+- **CI:** Applied `dart format` and `dart fix` so `flutter analyze` is clean (package + example app). Restores green GitHub Actions for format, analyze, test, and `dart pub publish --dry-run`.
+
 ## 1.0.3 — 2026-05-02
 
 ### Fixed

@@ -52,7 +52,8 @@ void main() {
       expect(feedback.resolvedSoundPath, 'assets/custom.mp3');
     });
 
-    test('resolvedSoundPath falls back to builtinSound when no custom path', () {
+    test('resolvedSoundPath falls back to builtinSound when no custom path',
+        () {
       const feedback = CelebrationFeedback(
         enableSound: true,
         builtinSound: BuiltinSound.pop,

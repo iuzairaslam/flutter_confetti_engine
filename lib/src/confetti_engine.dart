@@ -170,8 +170,7 @@ abstract final class ConfettiEngine {
     ConfettiCustomization? customization,
     TextStyle? messageStyle,
     Alignment messageAlignment = Alignment.bottomCenter,
-    EdgeInsets messageOuterPadding =
-        const EdgeInsets.fromLTRB(24, 0, 24, 56),
+    EdgeInsets messageOuterPadding = const EdgeInsets.fromLTRB(24, 0, 24, 56),
     TextAlign messageTextAlign = TextAlign.center,
     BoxDecoration? messageDecoration,
     EdgeInsets messageInnerPadding =
@@ -242,8 +241,7 @@ abstract final class ConfettiEngine {
         ConfettiCustomization.merge(scene?.customization, customization);
 
     final msg = overlayMessage;
-    final messageOptions =
-        msg ?? const CelebrationMessageOptions(message: '');
+    final messageOptions = msg ?? const CelebrationMessageOptions(message: '');
     final showBanner = msg != null && msg.shouldPaintText;
 
     return showDialog<void>(

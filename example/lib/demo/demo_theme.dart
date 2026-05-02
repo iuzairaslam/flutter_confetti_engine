@@ -3,16 +3,16 @@ import 'package:flutter/services.dart';
 
 // ── Brand palette ────────────────────────────────────────────────────────────
 
-const Color kBgDeep      = Color(0xFF090919);
-const Color kBgCard      = Color(0xFF12122A);
+const Color kBgDeep = Color(0xFF090919);
+const Color kBgCard = Color(0xFF12122A);
 const Color kBgCodeBlock = Color(0xFF06060F);
 const Color kBorderFaint = Color(0x18FFFFFF);
-const Color kTextMuted   = Color(0xFF7575A8);
+const Color kTextMuted = Color(0xFF7575A8);
 
 const Color kAccentViolet = Color(0xFF8B5CF6);
-const Color kAccentCoral  = Color(0xFFFF6B6B);
-const Color kAccentTeal   = Color(0xFF06D6A0);
-const Color kAccentAmber  = Color(0xFFFFD166);
+const Color kAccentCoral = Color(0xFFFF6B6B);
+const Color kAccentTeal = Color(0xFF06D6A0);
+const Color kAccentAmber = Color(0xFFFFD166);
 
 // ── Theme builder ─────────────────────────────────────────────────────────────
 

@@ -141,7 +141,6 @@ final class FlutterConfettiPhysics {
   }
 }
 
-
 /// Default rectangular paper path (relative to particle origin) for matrix-path draws.
 Path flutterConfettiPaperPath(double width, double height) {
   final path = Path()

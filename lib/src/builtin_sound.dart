@@ -61,13 +61,12 @@ enum BuiltinSound {
   /// High-energy — great for sports wins, perfect scores, big milestones.
   airhorn;
 
-  static const String _base =
-      'packages/flutter_confetti_engine/assets/sounds';
+  static const String _base = 'packages/flutter_confetti_engine/assets/sounds';
 
   /// Flutter asset path for this clip.
   ///
   /// Already prefixed with `packages/flutter_confetti_engine/…` so you never
   /// need to register the files in your own app's `pubspec.yaml` — Flutter
   /// merges package assets automatically.
-  String get assetPath => '$_base/${name}.wav';
+  String get assetPath => '$_base/$name.wav';
 }

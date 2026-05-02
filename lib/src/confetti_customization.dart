@@ -112,7 +112,8 @@ class ConfettiCustomization {
       gravity: gravity ?? this.gravity,
       speedMultiplier: speedMultiplier ?? this.speedMultiplier,
       lifetimeMultiplier: lifetimeMultiplier ?? this.lifetimeMultiplier,
-      burstDirectionDegrees: burstDirectionDegrees ?? this.burstDirectionDegrees,
+      burstDirectionDegrees:
+          burstDirectionDegrees ?? this.burstDirectionDegrees,
       burstSpreadDegrees: burstSpreadDegrees ?? this.burstSpreadDegrees,
       useTickBasedPhysics: useTickBasedPhysics ?? this.useTickBasedPhysics,
       tickSpawnOptions: tickSpawnOptions ?? this.tickSpawnOptions,
@@ -140,8 +141,10 @@ class ConfettiCustomization {
           : base.lifetimeMultiplier,
       burstDirectionDegrees:
           override.burstDirectionDegrees ?? base.burstDirectionDegrees,
-      burstSpreadDegrees: override.burstSpreadDegrees ?? base.burstSpreadDegrees,
-      useTickBasedPhysics: override.useTickBasedPhysics || base.useTickBasedPhysics,
+      burstSpreadDegrees:
+          override.burstSpreadDegrees ?? base.burstSpreadDegrees,
+      useTickBasedPhysics:
+          override.useTickBasedPhysics || base.useTickBasedPhysics,
       tickSpawnOptions: override.tickSpawnOptions ?? base.tickSpawnOptions,
       particleBlendMode: override.particleBlendMode ?? base.particleBlendMode,
     );
@@ -171,7 +174,8 @@ class ConfettiCustomization {
   /// Effective gravity: optional customization overrides the preset when finite.
   ///
   /// Non-finite gravity falls back to [presetGravity].
-  static double effectiveGravity(double presetGravity, ConfettiCustomization? c) {
+  static double effectiveGravity(
+      double presetGravity, ConfettiCustomization? c) {
     final g = c?.gravity;
     if (g == null) return presetGravity;
     if (!g.isFinite) return presetGravity;

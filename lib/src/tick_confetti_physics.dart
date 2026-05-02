@@ -78,8 +78,7 @@ class TickConfettiPhysics {
       wobbleSpeed: min(0.11, rng.nextDouble() * 0.1 + 0.05),
       velocity: options.startVelocity * 0.5 +
           rng.nextDouble() * options.startVelocity,
-      angle2D:
-          -radAngle + (0.5 * radSpread - rng.nextDouble() * radSpread),
+      angle2D: -radAngle + (0.5 * radSpread - rng.nextDouble() * radSpread),
       tiltAngle: (rng.nextDouble() * (0.75 - 0.25) + 0.25) * pi,
       color: color,
       decay: options.decay,

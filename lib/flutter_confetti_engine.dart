@@ -65,7 +65,10 @@ export 'src/confetti_style.dart' show ConfettiStyle, ConfettiStyleShapes;
 export 'src/confetti_type.dart' show ConfettiType;
 export 'src/confetti_customization.dart' show ConfettiCustomization;
 export 'src/tick_confetti_spawn_options.dart'
-    show TickConfettiSpawnOptions, kTickConfettiPackageColors, kTickConfettiWarmPalette;
+    show
+        TickConfettiSpawnOptions,
+        kTickConfettiPackageColors,
+        kTickConfettiWarmPalette;
 export 'src/confetti_controller.dart' show ConfettiController, ControllerState;
 export 'src/confetti_engine.dart' show ConfettiEngine;
 export 'src/confetti_showcase.dart'
