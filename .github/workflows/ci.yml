@@ -30,6 +30,8 @@ jobs:
       - name: flutter pub get
         run: flutter pub get
 
+      # Run format only after resolution — otherwise analysis_options includes fail and
+      # dart format can rewrite sources differently (spurious --set-exit-if-changed).
       - name: Format (dart format)
         run: dart format --output=none --set-exit-if-changed lib test
 
@@ -58,6 +60,7 @@ jobs:
         working-directory: example
         run: flutter pub get
 
+      # Same ordering rule as package job — pub get before format.
       - name: Format example
         working-directory: example
         run: dart format --output=none --set-exit-if-changed lib test
