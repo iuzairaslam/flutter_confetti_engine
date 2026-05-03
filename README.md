@@ -1,3 +1,6 @@
+<img width="1376" height="768" alt="Firefly_Gemini Flash_A wide cinematic banner (16-9)  Deep space-black background fading to dark indigo at  70446 (1)" src="https://github.com/user-attachments/assets/5b8f9d9f-f9f4-44ac-8d03-5eb486617f40" />
+
+
 # flutter_confetti_engine
 
 [![Pub](https://img.shields.io/pub/v/flutter_confetti_engine.svg)](https://pub.dev/packages/flutter_confetti_engine)
