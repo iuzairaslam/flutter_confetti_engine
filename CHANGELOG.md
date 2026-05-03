@@ -1,5 +1,22 @@
 # Changelog
 
+## 1.0.7 — 2026-05-03
+
+### Added
+
+- **10 built-in synthesized sounds** — `BuiltinSound.pop`, `.chime`, `.fanfare`, `.applause`, `.whoosh`, `.drumroll`, `.levelUp`, `.bell`, `.sparkle`, `.airhorn`. All clips are original Python-synthesized WAV files, MIT-licensed, zero external assets needed.
+- **`BuiltinSound` enum** with `assetPath` getter (automatically prefixed with `packages/flutter_confetti_engine/…`) — no `pubspec.yaml` registration required in the consuming app.
+- **`ConfettiBundledSounds`** updated: 10 convenience path getters, `builtinForPreset()`, and `pathForPreset()` mapping each preset to the best-matched clip.
+- **`CelebrationFeedback.builtinSound`** field — pick any `BuiltinSound` directly without a custom asset path.
+- **`CelebrationFeedback.bundledForPreset(Preset)`** factory auto-selects the matching built-in clip.
+- **Explicit `platforms:` declaration** in `pubspec.yaml` — supports `android`, `ios`, `linux`, `macos`, `web`, `windows`.
+
+### Changed
+
+- **`Preset` enum renamed** for clarity and originality: `nova` (was `blastStars`), `cascade` (was `goliath`), `flare` (was `singles`), `crossfire` (was `pumpLeft`).
+- **Example app** updated: 10-sound showcase grid, new preset display names, stat chip shows "10 sounds".
+- **`ConfettiDensity` enum values** now have individual doc comments (`low`, `medium`, `high`).
+
 ## 1.0.6 — 2026-05-03
 
 ### Changed

@@ -1,9 +1,17 @@
 import 'confetti_customization.dart';
 
 /// Particle amount relative to each [Preset]’s default count.
+///
+/// Use with [CelebrationScene.compose] or [ConfettiDensityScale.scaledCount]
+/// to scale the particle count up or down without picking a raw number.
 enum ConfettiDensity {
+  /// ~65 % of the preset default — light sprinkle, subtle celebration.
   low,
+
+  /// 100 % of the preset default — the standard experience.
   medium,
+
+  /// ~135 % of the preset default — full, rich burst for big moments.
   high,
 }
 
