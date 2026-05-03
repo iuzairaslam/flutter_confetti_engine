@@ -2,7 +2,7 @@ name: flutter_confetti_engine
 description: >
   A celebration package that unifies confetti particles, haptic feedback, and
   optional sound in a single API call.
-version: 1.0.7
+version: 1.0.8
 
 # Repository is the canonical homepage until the package is listed on pub.dev.
 homepage: https://github.com/iuzairaslam/flutter_confetti_engine
@@ -36,7 +36,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  audioplayers: ^6.0.0
+  just_audio: ^0.10.0
+  web: ^1.0.0
 
 dev_dependencies:
   flutter_test:

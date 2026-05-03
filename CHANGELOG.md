@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.8 — 2026-05-03
+
+### Changed
+
+- **Audio backend replaced** — switched from `audioplayers` to `just_audio` (native) + `package:web` `HTMLAudioElement` (web/WASM) via conditional exports. Eliminates the transitive `http` dependency that caused `pana` to fail dependency resolution, unlocking platform support, static analysis, and dartdoc scoring.
+- **WASM-compatible web audio** — `audio_player_wrapper_web.dart` uses `package:web` and `dart:js_interop` with no `dart:io`, making the package fully WASM-ready on web.
+- Added `web: ^1.0.0` as a direct dependency.
+
 ## 1.0.7 — 2026-05-03
 
 ### Added

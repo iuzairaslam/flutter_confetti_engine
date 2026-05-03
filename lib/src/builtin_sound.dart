@@ -17,8 +17,8 @@
 /// // Auto-pick the best clip for a preset:
 /// CelebrationFeedback.bundledForPreset(Preset.nova);
 ///
-/// // Raw asset path for use with audioplayers directly:
-/// AudioPlayer().play(AssetSource(BuiltinSound.levelUp.assetPath));
+/// // Raw asset path (e.g. with just_audio directly):
+/// AudioPlayer().setAsset(BuiltinSound.levelUp.assetPath).then((_) => AudioPlayer().play());
 /// ```
 enum BuiltinSound {
   /// Short, punchy confetti-popper snap (~0.4 s).
